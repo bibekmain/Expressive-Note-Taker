@@ -20,7 +20,7 @@ Introducing the Expressive Note Taker: Your go-to web application for effortless
 * [License](#license)
 
 ## Installation
-- There is no installation required as this application is deployed in heroku. Access the website [here](https://expressive-note-taker-176f972e5851.herokuapp.com/notes)
+- There is no installation required as this application is deployed in heroku. Access the website [here](https://expressive-note-taker-176f972e5851.herokuapp.com)
 
 
 ## Usage
