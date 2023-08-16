@@ -5,6 +5,7 @@ const fs = require('fs');
 
 const storedData = require('../db/db.json');
 
+//function that writes to db.json
 const writeToDb = (newNotes) => {
     fs.writeFileSync(path.resolve(__dirname, "../db/db.json"), JSON.stringify(newNotes));
 }
@@ -13,7 +14,7 @@ const writeToDb = (newNotes) => {
 router.get('/notes', (req, res) => {
     let notes = storedData.map((note, index) => ({
         ...note,
-        id: index
+        id: index+1
     }));
 
     res.json(notes);
