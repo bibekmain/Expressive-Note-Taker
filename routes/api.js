@@ -32,7 +32,7 @@ router.post('/notes', (req, res) => {
 //delete route that deletes a note with given id
 router.delete('/notes/:id', (req, res) => {
     let notes = storedData;
-    notes.splice(req.params.id, 1);
+    notes.splice(req.params.id-1, 1);
     writeToDb(notes);
 
     res.json(notes);
